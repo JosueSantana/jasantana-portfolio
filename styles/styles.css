@@ -21,7 +21,7 @@ a {
   margin: 0 10% 0 10%;
 }
 
-/* --- HEADER --- */ 
+/* --- HEADER --- */
 nav {
   margin: 20px 10px;
   display: flex;
@@ -116,7 +116,13 @@ main h2 {
 
 .about__header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  font-size: 2em;
+}
+
+.about__header hr {
+  border: 1px solid red;
 }
 
 .about__content {
@@ -128,6 +134,10 @@ main h2 {
   margin-right: 200px;
 }
 
+.about_content__text p {
+  font-size: 1.2em;
+}
+
 .about__image {
   border-radius: 50%;
   filter: drop-shadow(20px 20px 2.5em #000);
@@ -135,11 +145,27 @@ main h2 {
 }
 .about__cards {
   display: flex;
+  margin-top: 40px;
 }
 
 .about__card {
   min-width: 200px;
-  padding: 0 5% 0 5%;
+  padding: 0 10px 20px 10px;
+  margin: 0 10px 0 10px;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color:#000; */
+  /* box-shadow: 10px 10px 1.2em #000; */
+}
+
+.about__card p {
+  margin: 10px 0 0 0;
+  text-align: center;
+  min-height: 50px;
+}
+
+.about__card ul li {
+  display: flex;
 }
 
 /* --- FOOTER --- */

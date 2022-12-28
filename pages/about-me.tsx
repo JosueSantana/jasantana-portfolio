@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className="about__content">
         <div className="about_content__text">
           <p>
-            I{"'"}m motivated by thoughtful software design and devising
+            I{"'"}m driven by thoughtful software design and devising
             creative solutions to challenging problems. I am mindful of often
             overlooked considerations such as accessibility and security, having
             worked in heavily regulated industries like FinTech and HealthTech.
