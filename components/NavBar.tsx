@@ -1,22 +1,45 @@
 import Link from "next/link";
+import { Dosis } from "@next/font/google";
+import { Ceviche_One } from "@next/font/google";
+
+const dosis = Dosis({ weight: "600", subsets: ["latin"] });
+const cevicheOne = Ceviche_One({ weight: "400", subsets: ["latin"] });
 
 const NavBar = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about-me">About Me</Link>
-        </li>
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link href="https://medium.com/@joansanres">Blog</Link>
-        </li>
-      </ul>
+      <div className={cevicheOne.className + " navbar__logo"}>
+        <Link className="navbar__logo--color" href="/">
+          JS
+        </Link>
+      </div>
+      <div className="navbar__items">
+        <ul className={dosis.className}>
+          <li>
+            <Link className="navbar__item" href="/about-me">
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar__item" href="/portfolio">
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="navbar__item"
+              href="https://medium.com/@joansanres"
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar__item" href="/">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

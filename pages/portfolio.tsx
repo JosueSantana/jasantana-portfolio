@@ -4,9 +4,7 @@ const Projects = () => {
       <ul>
         <li><a href="https://wikipedia.org">Matten - A Tennis Matching Application</a></li>
         <li><a href="https://wikipedia.org">Effiquest - A Gamified Productivity Application</a></li>
-        <li><a href="https://wikipedia.org">Matten - An Online Travel Advisor</a></li>
-        <li><a href="https://wikipedia.org">Blinkers - An Online Bookstore Application</a></li>
-        <li><a href="https://wikipedia.org">HandyDesk - A Helpdesk Platform</a></li>
+        <li><a href="https://wikipedia.org">Costa - An Online Travel Advisor</a></li>
       </ul>
     </div>
   )

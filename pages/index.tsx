@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import Layout from "../components/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Courgette } from "@next/font/google";
+
+const courgette = Courgette({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,9 +15,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Welcome</h1>
-      </main>
+      <div className="index__header">
+        <div className={courgette.className}>
+          <h1>Hi, I{"'"}m Anthony.</h1>
+          <p>
+            I{"'"}m a Software engineer based in New York with 5 years of
+            professional experience in Engineering and IT.
+          </p>
+          <p>Welcome. Have a look around!</p>
+        </div>
+      </div>
+      <Image
+        className="index__image"
+        src="/images/placeholder1.jpg"
+        alt=""
+        width={500}
+        height={300}
+      />
     </>
   );
 }

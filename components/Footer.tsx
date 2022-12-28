@@ -5,11 +5,14 @@ import {
   AiFillTwitterCircle,
   AiFillMediumCircle,
 } from "react-icons/ai";
+import { Dosis } from "@next/font/google";
+
+const dosis = Dosis({ weight: "600", subsets: ["latin"] });
 
 const Footer = () => {
   return (
     <footer>
-      <p> Reach out or follow me @</p>
+      <p className={dosis.className}> Reach out or follow me @</p>
       <ul>
         <li>
           <a href="mailto:anthony@jasantana.com">
