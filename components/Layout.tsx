@@ -4,11 +4,11 @@ import { ScriptProps } from "next/script";
 
 const Layout = ({ children }: ScriptProps) => {
   return (
-    <>
+    <div className="layout">
       <NavBar />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
