@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <div className="index__header">
         <div className={courgette.className}>
-          <h1>Hi, I{"'"}m Anthony.</h1>
+          <h1>Hi, I{"'"}m Josu&eacute;.</h1>
           <p>
             I{"'"}m a Software engineer based in New York with 5 years of
             professional experience in Engineering and IT.
