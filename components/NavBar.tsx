@@ -1,14 +1,13 @@
 import Link from "next/link";
-import { Dosis } from "@next/font/google";
-import { Ceviche_One } from "@next/font/google";
+import { Dosis, Wallpoet } from "@next/font/google";
 
 const dosis = Dosis({ weight: "600", subsets: ["latin"] });
-const cevicheOne = Ceviche_One({ weight: "400", subsets: ["latin"] });
+const wallPoet = Wallpoet({ weight: "400", subsets: ["latin"] });
 
 const NavBar = () => {
   return (
     <nav>
-      <div className={cevicheOne.className + " navbar__logo"}>
+      <div className={wallPoet.className + " navbar__logo"}>
         <Link className="navbar__logo--color" href="/">
           JS
         </Link>

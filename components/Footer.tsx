@@ -15,7 +15,7 @@ const Footer = () => {
       <p className={dosis.className}> Reach out or follow me @</p>
       <ul>
         <li>
-          <a href="mailto:anthony@jasantana.com">
+          <a href="mailto:josue@jasantana.com">
             <AiFillMail />
           </a>
         </li>

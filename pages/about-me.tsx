@@ -13,34 +13,32 @@ const AboutMe = () => {
       <div className="about__content">
         <div className="about_content__text">
           <p>
-            I{"'"}m driven by thoughtful software design and devising
-            creative solutions to challenging problems. I am mindful of often
-            overlooked considerations such as accessibility and security, having
-            worked in heavily regulated industries like FinTech and HealthTech.
+            I{"'"}m driven by thoughtful software design and devising creative
+            solutions to challenging problems. I am mindful of understated
+            considerations such as accessibility and security, having worked in
+            heavily regulated industries like FinTech and HealthTech.
           </p>
           <button>
-            <AiOutlineDownload /> 
-            {" "}
-            Resume
+            <a download href="/public/documents/jasantana-resume-2023.pdf">
+              <AiOutlineDownload /> Resume
+            </a>
           </button>
           <div className="about__cards">
             <div className="about__card">
-              <p>
-                Technologies I enjoy working with
-              </p>
+              <p>Technologies I enjoy working with</p>
               <ul>
                 <li>Typescript</li>
                 <li>React</li>
-                <li>Next</li>
+                <li>Redux</li>
+                <li>Express</li>
                 <li>Sass</li>
-                <li>AWS</li>
               </ul>
             </div>
             <div className="about__card">
               <p>Tools I swear by</p>
               <ul>
                 <li>Visual Studio Code</li>
-                <li>React Dev Tools</li>
+                <li>Redux Dev Tools</li>
                 <li>Postman</li>
                 <li>Affinity Designer</li>
                 <li>Obsidian</li>

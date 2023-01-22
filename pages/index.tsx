@@ -25,13 +25,13 @@ export default function Home() {
           <p>Welcome. Have a look around!</p>
         </div>
       </div>
-      <Image
+      {/* <Image
         className="index__image"
         src="/images/placeholder1.jpg"
         alt=""
         width={500}
         height={300}
-      />
+      /> */}
     </>
   );
 }

@@ -1,6 +1,7 @@
 /* --- GENERAL --- */
 body {
   margin: 0;
+  color: #0f382c
 }
 
 nav ul {
@@ -166,6 +167,40 @@ main h2 {
 
 .about__card ul li {
   display: flex;
+}
+
+/* --- CONTENT --- */
+.portfolio_content ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  decoration: none;
+}
+
+.portfolio_content ul li a {
+}
+
+.portfolio_content__list{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.portfolio_content__icon {
+  font-size: 100px;
+  color: grey;
+  opacity: 0.25;
+}
+
+.portfolio_content__icon:hover {
+  font-size: 100px;
+  color: lightblue;
+  opacity: 1.0;
+}
+
+.portfolio_content__text {
+  font-weight: bold; 
 }
 
 /* --- FOOTER --- */

@@ -1,13 +1,25 @@
+import { AiFillGithub } from "react-icons/ai";
+import { Dosis, Wallpoet } from "@next/font/google";
+
+const dosis = Dosis({ weight: "600", subsets: ["latin"] });
+
 const Projects = () => {
   return (
-    <div>
+    <div className={"portfolio_content"}>
       <ul>
-        <li><a href="https://wikipedia.org">Matten - A Tennis Matching Application</a></li>
-        <li><a href="https://wikipedia.org">Effiquest - A Gamified Productivity Application</a></li>
-        <li><a href="https://wikipedia.org">Costa - An Online Travel Advisor</a></li>
+        <li>
+          <div className="portfolio_content__list">
+            <a href="https://github.com/JosueSantana/rallyrank">
+              <AiFillGithub className="portfolio_content__icon" />
+            </a>
+            <p className={dosis.className + " portfolio_content__text"}>
+              RallyRank - A Tennis Matching Application
+            </p>
+          </div>
+        </li>
       </ul>
     </div>
-  )
+  );
 };
 
 export default Projects;
